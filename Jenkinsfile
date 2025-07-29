@@ -5,10 +5,7 @@ pipeline {
         stage ('Setup') {
             steps {
                 echo 'Setting up...'
-                echo 'npm install'
-                echo 'node -v'
-                echo 'npm -v'
-                sh 'npm -v'
+                sh 'npm install'
             }
         }
         stage ('Test') {

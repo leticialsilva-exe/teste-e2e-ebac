@@ -5,10 +5,7 @@ pipeline {
         stage ('Setup') {
             steps {
                 echo 'Setting up...'
-                sh 'node install'
                 sh 'npm install'
-                sh 'npm install cypress-mochawesome-reporter --save-dev'
-                echo 'Cypress and dependencies installed'
                 echo 'node -v'
                 sh 'node -v'
                 echo 'npm -v'

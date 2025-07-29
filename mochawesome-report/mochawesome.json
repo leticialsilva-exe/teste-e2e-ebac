@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 1,
     "failures": 0,
-    "start": "2025-07-29T22:40:40.000Z",
-    "end": "2025-07-29T22:40:50.867Z",
-    "duration": 10867,
+    "start": "2025-07-29T23:10:17.550Z",
+    "end": "2025-07-29T23:10:29.328Z",
+    "duration": 11778,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 33.33333333333333,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a228af3a-6a1c-4861-b86d-a3fe999a05e2",
+      "uuid": "751f9cf2-261e-4c4b-b314-59216a052fa4",
       "title": "",
       "fullFile": "cypress/e2e/login.cy.js",
       "file": "cypress/e2e/login.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e01f614f-ef76-48af-9754-9932d6c38ff8",
+          "uuid": "f5f72878-6de2-43a7-afb1-891ded1c4103",
           "title": "Funcionalidade Login",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Login com sucesso usando Comando customizado",
               "fullTitle": "Funcionalidade Login Login com sucesso usando Comando customizado",
               "timedOut": null,
-              "duration": 4183,
+              "duration": 4795,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.login(dadosLogin.usuario, dadosLogin.senha);\ncy.get('.page-title').should('contain', 'Minha conta');",
               "err": {},
-              "uuid": "22afa6fb-b346-40d5-9257-dce17d4527e2",
-              "parentUUID": "e01f614f-ef76-48af-9754-9932d6c38ff8",
+              "uuid": "05db6a22-df63-4404-9405-b1f8358bdf68",
+              "parentUUID": "f5f72878-6de2-43a7-afb1-891ded1c4103",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Login usando fixture",
               "fullTitle": "Funcionalidade Login Login usando fixture",
               "timedOut": null,
-              "duration": 2853,
+              "duration": 3138,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "cy.fixture('perfil').then(dados => {\n  cy.login(dados.usuario, dados.senha);\n});\ncy.get('.page-title').should('contain', 'Minha conta');",
               "err": {},
-              "uuid": "78e0a830-2457-4275-b648-4c51e4c7e118",
-              "parentUUID": "e01f614f-ef76-48af-9754-9932d6c38ff8",
+              "uuid": "dd2a20ea-ef23-421b-96bc-935209ef2116",
+              "parentUUID": "f5f72878-6de2-43a7-afb1-891ded1c4103",
               "isHook": false,
               "skipped": false
             },
@@ -83,23 +83,23 @@
               "context": null,
               "code": "cy.get('#username').type(dadosLogin.usuario);\ncy.get('#password').type(dadosLogin.senha, {\n  log: false\n});\ncy.get('.woocommerce-form > .button').click();\ncy.get('.page-title').should('contain', 'Minha conta');\ncy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, aluno_ebac');",
               "err": {},
-              "uuid": "8cb36dfc-897b-409b-9ce8-3631797152ef",
-              "parentUUID": "e01f614f-ef76-48af-9754-9932d6c38ff8",
+              "uuid": "4b6bbed8-ff97-41e1-bd7c-c47861996815",
+              "parentUUID": "f5f72878-6de2-43a7-afb1-891ded1c4103",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "22afa6fb-b346-40d5-9257-dce17d4527e2",
-            "78e0a830-2457-4275-b648-4c51e4c7e118"
+            "05db6a22-df63-4404-9405-b1f8358bdf68",
+            "dd2a20ea-ef23-421b-96bc-935209ef2116"
           ],
           "failures": [],
           "pending": [
-            "8cb36dfc-897b-409b-9ce8-3631797152ef"
+            "4b6bbed8-ff97-41e1-bd7c-c47861996815"
           ],
           "skipped": [],
-          "duration": 7036,
+          "duration": 7933,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -17,7 +17,14 @@ pipeline {
         stage ('Deploy') {
             steps {
                 echo 'Deploying....'
-                publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, icon: '', keepAll: false, reportDir: '/mochawesome-report', reportFiles: 'mochawesome.html', reportName: 'Test Report', reportTitles: '', useWrapperFileDirectly: true])
+                publishHTML([allowMissing: false,
+                    alwaysLinkToLastBuild: false, 
+                    icon: '', keepAll: false, 
+                    reportDir: '/mochawesome-report', 
+                    reportFiles: 'mochawesome.html', 
+                    reportName: 'Test Report', 
+                    reportTitles: '', 
+                    useWrapperFileDirectly: true ])
             }
         }
 }

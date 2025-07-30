@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        nodejs 'NodeJS_23' // Ensure NodeJS is installed and configured in Jenkins
+    }
+
     stages {
         stage ('Setup') {
             steps {

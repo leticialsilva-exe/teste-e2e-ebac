@@ -12,7 +12,7 @@ module.exports = defineConfig({
       "reportFilename": "index.html",
       "overwrite": true,
       "html": true,
-      "json": false
+      "json": false 
     }
   },
 });

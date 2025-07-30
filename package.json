@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:run": "npx cypress run",
-    "cy:open": "npx cypress open"
+    "cy:open": "npx cypress open",
+    "cy:run-ci": "start-server-and-test start http://localhost:3000/api-doc test"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,7 @@
     "cypress-mochawesome-reporter": "^4.0.0",
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^5.0.0",
-    "mochawesome-report-generator": "^6.2.0"
+    "mochawesome-report-generator": "^6.2.0",
+    "start-server-and-test": "^2.0.12"
   }
 }

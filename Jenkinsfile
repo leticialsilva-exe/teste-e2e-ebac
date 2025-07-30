@@ -24,7 +24,7 @@ pipeline {
                 publishHTML([allowMissing: false,
                     alwaysLinkToLastBuild: false, 
                     icon: '', keepAll: false, 
-                    reportDir: '/mochawesome-report', 
+                    reportDir: 'mochawesome-report', 
                     reportFiles: 'mochawesome.html', 
                     reportName: 'Test Report', 
                     reportTitles: '', 

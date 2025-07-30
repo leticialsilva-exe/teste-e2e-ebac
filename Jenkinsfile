@@ -15,7 +15,7 @@ pipeline {
         stage ('Test') {
             steps {
                 echo 'Testing..'
-                sh 'npm run cy:run'
+                sh 'NO_COLOR=1 npm run cy:run'
             }
         }
         stage ('Deploy') {

@@ -2,7 +2,7 @@ name: EBAC CI
 
 on:
   push:
-    branches: [ ci ]
+    branches: [ ci_gitHubActions ]
     
 # Allows you to run this workflow manually from the Actions tab
 workflow dispatch:

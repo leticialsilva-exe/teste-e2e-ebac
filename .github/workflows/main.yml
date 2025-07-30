@@ -4,31 +4,27 @@ on:
   push:
     branches: [ ci_gitHubActions ]
     
-# Allows you to run this workflow manually from the Actions tab
-workflow dispatch:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-# This workflow contains a single job called "build"
-  test:
-  # The type of runner that the job will run on
-  runs-on: ubuntu-latest
-  # Steps repdszresent a sequence of tasks that will be executed as part of the job
+  test: 
+    runs-on: ubuntu-latest
   
-  steps:
-  # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-  - uses: actions/checkout@v2
-  - uses: actions/setup-node@v4
-    with:
-      node-version: 18
-  - name: Cypress run
-    uses: cypress-io/github-action@v2
-    continue-on-error: true
-    with:
-      install-command: npm install
-      browser: chrome
-  - name: Publish report
-    uses: peaceiris/actions-gh-pages@v3 
-    with:
-      github_token: ${{ secrets.GITHUB_TOKEN 7}
-      publish_dir: ./mochawesome-report
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 18
+    - name: Cypress run
+      uses: cypress-io/github-action@v2
+      continue-on-error: true
+      with:
+        install-command: npm install
+        browser: chrome
+    - name: Publish report
+      uses: peaceiris/actions-gh-pages@v3 
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN 7}
+        publish_dir: ./mochawesome-report

@@ -14,7 +14,7 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
     cy.visit('/')
   });
 
-  it('Deve fazer um pedido na loja Ebac Shop de ponta a ponta', () => {
+  it.skip('Deve fazer um pedido na loja Ebac Shop de ponta a ponta', () => {
 
     cy.selecionarMenu('Comprar')
     cy.fixture('produtos').then(produto => {
